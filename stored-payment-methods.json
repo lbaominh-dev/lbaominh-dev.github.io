@@ -1,0 +1,19 @@
+{
+  "paymentMethods": [
+    {
+      "id": "<ID of stored payment method>",
+      "supportedPaymentFlows": "<list of supported flows that can be performed with this payment method>",
+      "type": "<type of the payment method. For example: Credit Card>",
+      // "creditCardInfo": [Optional] credit card information if the payment method is a credit card.
+      "creditCardInfo": {
+        "brand": "<credit card brand>",
+        "lastDigits": "<last digits>",
+        "expMonth": "<expiration month>",
+        "expYear": "<expiration year>",
+        "firstDigits": "<[Optional] first digits>"
+      },
+      "name": "<[Optional] name of the payment method. For example: last 4 digits of credit card, obfuscated email>",
+      "data": "<[Optional] JSON data that will be returned to client>"
+    }
+  ]
+}
